@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="es-MX">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css"
+        integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous">
+    
+    <script src="sweetalert.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="sweetalert.css">
+    
+    <title> Diagnóstico MujerON </title>
+</head>
+
+<body style="background-color:#525252;"> 
+        
+    <font color="White" face="Verdana">
+    
+    <!--titulo-->
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1 style="text-align: center;" >  </h1>
+            </div>
+        </div>
+    </div>
+
+    <!--Preguntas-->
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <form>
+                    <p><strong>1. Si me invitan a salir: Acepto siempre y cuando cumpla con mis requisitos y este a mi altura.   “Indispensable que nos veamos bien” </strong></p>
+                    <ol type="A">
+                        <li><input type="radio" name="pregunta1" id="p11"> Sí </li>
+                        <li><input type="radio" name="pregunta1" id="p12"> No </li>
+                       
+                    </ol>
+                    <p><strong>2. Si en la primera cita me hace pagar parte de la cuenta: No me da confianza, prefiero a alguien que no tenga este tipo de preocupaciones económicas. “No quiero esto en mi vida” </strong></p>
+                    <ol type="A">
+                        <li><input type="radio" name="pregunta2" id="p21"> Sí</li>
+                        <li><input type="radio" name="pregunta2" id="p23"> No</li>
+                   
+                    </ol>
+                    <p><strong>3. Si en la primera cita me pide tener relaciones sexuales: Es un rotundo no. Tiene que hacer méritos para alguien que vale la pena como yo. “No soy fácil” </strong></p>
+                    <ol type="A">
+                        <li><input type="radio" name="pregunta3" id="p31"> Sí</li>
+                        <li><input type="radio" name="pregunta3" id="p33"> No</li>
+                     
+                    </ol>
+                    <p><strong>4. Después de la primera cita, si no me llama pronto: Analizo si realmente vale la pena ese hombre y si podrá cumplir con mis requisitos. “Prefiero soltar para no engancharme” </strong></p>
+                    <ol type="A">
+                        <li><input type="radio" name="pregunta4" id="p41"> Sí</li>
+                        <li><input type="radio" name="pregunta4" id="p42"> No</li>
+                      
+                    </ol>
+                    <p><strong>5. Si en la primera cita, resulta que soy el amor de su vida y casi me pide matrimonio: Nada nuevo, generalmente me pasa y controlo la situación. ”Siempre ven que no hay mujer como yo” </strong></p>
+                    <ol type="A">
+                        <li><input type="radio" name="pregunta5" id="p55"> Sí</li>
+                        <li><input type="radio" name="pregunta5" id="p51"> No</li>
+                    </ol>
+                    
+                    <hr />
+                    
+                    
+                    
+                                    
+                    <input type="button"  value="RESULTADO" class="btn btn-primary"  onclick="EventoAlert()"/>
+    <script>
+        
+
+        function EventoAlert(){
+        
+            if(resultado()==1)
+        swal("Todo bien","nivel 1","success");
+            
+           if(resultado()==2)
+        swal("Todo bien","nivel 2","success");  
+            
+            
+          if(resultado()==3)
+        swal("Todo bien","nivel 3","success");  
+            
+             if(resultado()==4)
+        swal("Todo bien","nivel 4","success");  
+            
+             if(resultado()==5)
+        swal("Todo bien","nivel 5","success");  
+            
+            
+        }
+    </script>
+                    
+                    
+                
+                    
+                    
+     <button type="button" class="btn btn-primary" onclick="location.href='https://www.facebook.com'">SIGUIENTE TEST</button>
+                
+                    <hr />
+                    
+                    
+    
+                
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!--Llamada al script de respuestas-->
+    <script src="respuestas.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js"
+        integrity="sha384-7aThvCh9TypR7fIc2HV4O/nFMVCBwyIUKL8XCtKE+8xgCgl/PQGuFsvShjr74PBp"
+        crossorigin="anonymous"></script>
+        </font>
+</body>
+
+</html>
